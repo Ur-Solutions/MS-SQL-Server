@@ -1,0 +1,12 @@
+services:
+  mssql:
+    # Documentation: https://mcr.microsoft.com/en-us/product/mssql/server/about
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: unless-stopped
+    environment:
+      ACCEPT_EULA: Y
+      # Default username = "sa"
+      MSSQL_SA_PASSWORD: "CQUh7-e7LWyA" # At least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.
+      MSSQL_PID: Developer
+    ports:
+      - 1433:1433
