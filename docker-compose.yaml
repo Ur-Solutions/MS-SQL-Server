@@ -6,7 +6,7 @@ services:
     environment:
       ACCEPT_EULA: Y
       # Default username = "sa"
-      MSSQL_SA_PASSWORD: "CQUh7-e7LWyA" # At least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.
+      MSSQL_SA_PASSWORD: "passWORD1" # At least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.
       MSSQL_PID: Developer
     ports:
       - 1433:1433
