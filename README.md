@@ -20,7 +20,14 @@ brew install msodbcsql17 mssql-tools
 
 4. Install Django database adapter: `poetry add mssql-django`
 
-5. Update your settings file with this content:
+This package depends on [pyodbc](https://pypi.org/project/pyodbc/), which needs to be installed separately: 
+
+```bash
+brew install unixodbc
+python -m pip install pyodbc
+```
+
+6. Update your settings file with this content:
 ```
 DATABASES = {
     "default": {
